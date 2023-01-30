@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Front-End Developer Survey Form</h1>
+    <p>Thank you for taking the time to help us</p>
+  </header>
+  <form id="survey-form" action="" method="post">
+    <div class="form-part">
+      <label>Name: <input type="text" placeholder="Enter your name" required></label>
+      <label>Email: <input type="email" placeholder="Enter your email" required></label>
+      <label>Age: <input type="number" min="1" max="200" placeholder="Enter your age"></label>
+    </div>
+    <div class="form-part">
+      <label> What is your current position?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">I am just learning</option>
+          <option value="2">Junior Front-End Developer</option>
+          <option value="3">Middle Front-End Developer</option>
+          <option value="4">Senior Front-End Developer</option>
+        </select>
+      </label>
+    </div>
+    <div class="form-part">
+      <p>
+        Which platform do you prefer to learn?
+        <span>(Check all that apply)</span>
+      </p>
+      <label><input name="prefer" value="university" type="checkbox" class="checkbox">University</label>
+      <label><input name="prefer" value="private-teacher" type="checkbox" class="checkbox">Private Teacher</label>
+      <label><input name="prefer" value="bootcamp" type="checkbox" class="checkbox">Bootcamp</label>
+      <label><input name="prefer" value="udemy" type="checkbox" class="checkbox">Udemy</label>
+      <label><input name="prefer" value="youtube" type="checkbox" class="checkbox">Youtube</label>
+      <label><input name="prefer" value="forum" type="checkbox" class="checkbox">Forum</label>
+      <label><input name="prefer" value="github" type="checkbox" class="checkbox">Github</label>
+    </div>
+    <div class="form-part">
+      <p>Would you recommend being a Front-End Developer?</p>
+      <label>
+        <input name="recommend" value="definitely" type="radio" class="radio" checked>
+        Definitely
+      </label>
+      <label>
+        <input name="recommend" value="maybe" type="radio" class="radio">
+        Maybe
+      </label>
+      <label>
+        <input name="recommend" value="not-sure" type="radio" class="radio">
+        Not sure
+      </label>
+    </div>
+    <div class="form-part">
+      <label>Write your suggestions:
+        <textarea placeholder="I like coding..." rows="3" cols="30"></textarea>
+      </label>
+    </div>
+    <button>Submit</button>
+  </form>
+</body>
+
+</html>
